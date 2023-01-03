@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    const choices = [ "rock","paper","scissors" ];
+    let getComputerChoice=function() {
+        const computerChoice = Math.floor(Math.random() * choices.length);
+        return choices[computerChoice];
+        // console.log(choices[computerChoice]);
+    }
+
+    const playerSelection="rock";
+    const computerSelection=getComputerChoice();
+    
+    console.log(computerSelection);
+    let playRound=function(playerSelection,computerSelection) {
+        if (playerSelection===computerSelection) {
+            return "tie";
+        } else {
+            return "somebody won!";
+        }
+        // return computerSelection;
+    }
+  
+
+    
+ 
+
+    console.log(playRound(playerSelection, computerSelection));
+
+    
+
+  </script>
+</body>
+</html>
